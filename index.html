@@ -82,15 +82,48 @@
 			.openbtn:hover {
 				  background-color: #444;
 				}
-			.box{
-			    display: none;
-			    width: 100%;
+			.hiddenimg {
+			  display: none;
 			}
 
-			b:hover + .box,.box:hover{
-			    display: inline-block;
-			    position: relative;
-			    z-index: 100;
+			.hiddentxt {
+			  font-weight: bold;
+			  color: #F00;
+			  z-index:99;
+			}
+
+			.hiddentxt a {
+			  color: #F00;
+			  text-decoration: none;
+			  z-index: 99;
+			}
+
+			.hiddenclick {
+			  font-weight: bold;
+			  color: #F00;
+			  text-decoration: none;
+			  cursor: pointer;
+			}
+
+			.hiddenclick a {
+			  color: #F00;
+			  text-decoration: none;
+			}
+
+			.hiddenclick a:visited {
+			  color: #F00;
+			  text-decoration: none;
+			}
+
+			.hiddentxt:hover ~ .hiddenimg {
+			  display: block;
+			  position: absolute;
+			    z-index: 2
+			}
+
+			.hiddenclickimg {
+			  display: none;
+
 			}
 		</style>
     </head>
@@ -109,23 +142,13 @@
 	  
 	
 	<header>
-	<h1 style="line-height:150%">Discussing Election Data in Virginia Through Data Visualizations</h1>
+	<h1 style="line-height:150%">!!Discussing Election Data in Virginia Through Data Visualizations</h1>
 	<p> This webpage is produced for the Data Visualization Interacting with Data Assignment. It evaluates a variety of voting data for the state of Virginia and presents it through different visualizations.<a class="link" href="https://github.com/fivethirtyeight/data/tree/master/non-voters">Data</a> for the first chart comes from a sample of 5,239 verified respondents surveyed as part of a poll for FiveThirtyEight. Data for the second and third charts comes from data provided by the state of Virginia (<a class="link" href="https://apps.elections.virginia.gov/SBE_CSV/ELECTIONS/ELECTIONTURNOUT/">Link</a>) and the Demographics Research Group at the University of Virginia (<a class="link" href="https://demographics.coopercenter.org">Link</a>).</p>
 	</header>
 
-	<p> 
-	Live previews for <b href="https://en.wikipedia.org/">Wikipedia</b>
-	  <div class="box">
-	     <iframe src="https://en.wikipedia.org/" width = "500px" height = "500px">
-	     </iframe>
-	  </div> 
-	and <b href="https://www.jquery.com/">JQuery</b>
-	  <div class="box">
-	     <iframe src="https://www.jquery.com/" width = "500px" height = "500px">
-	     </iframe>
-	  </div> 
-	will appear when these links are moused over.
-	</p>
+	<p>
+    Hover to see a <span class="hiddentxt"><a href="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg">banana</a></span><span class="hiddenimg"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" width="250" /></span>.
+  	</p>
  
 	<a id="ParCat">    
     	<h2>Voter Patterns (Parallel Categories Plot)</h2>
