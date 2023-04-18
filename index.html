@@ -82,6 +82,16 @@
 			.openbtn:hover {
 				  background-color: #444;
 				}
+			.box{
+				    display: none;
+				    width: 100%;
+				}
+
+			a:hover + .box,.box:hover{
+				    display: block;
+				    position: relative;
+				    z-index: 100;
+				}
 				</style>
     </head>
 	
@@ -114,7 +124,14 @@
      	<h2>Turnout Over Time (Bubble Plot)</h2>
     	<iframe src="bubble.html" title="Voter Turnout: Bubble" width = "100%" height = "100%" 
     	frameBorder="0"></iframe> 
-	<p> This bubble plot shows trends that are to be expected. First, in non-presidential election years, voter turnout is signifcantly lower than in presidential election years. In 2020, absentee voting was very high in comparison to previous years which is to be expected because of the pandemic. While absentee voting decreased in 2022, it is still higher than pre-pandemic elections. In 2020, there was also much higher percent turnout across all localities. While there seem to be no impact of region on voter trends, it is interesting that that largest outliers (with low absentee voting) are from the same region. </p>
+	<p> This bubble plot shows trends that are to be expected. First, in non-presidential election years, voter turnout is signifcantly lower than in presidential election years. In 2020, absentee voting was very high in comparison to previous years which is to be expected because of the pandemic. While absentee voting decreased in 2022, it is still higher than pre-pandemic elections. In 2020, there was also much higher percent turnout across all localities. While there seem to be no impact of region on voter trends, it is interesting that that largest outliers (with low absentee voting) are from the same region. 
+		
+	Live previews for <a href="https://en.wikipedia.org/">Wikipedia</a>	
+	<div class="box">
+	     <iframe src="https://en.wikipedia.org/" width = "500px" height = "500px">
+	     </iframe>
+	</div>
+	</p>	
         </a>
 	    
 	<a id="Choro">
