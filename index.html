@@ -22,6 +22,32 @@
 			  font-size: 25px;
 			  color: white;
 			}
+		.sidenav {
+			  width: 130px;
+			  position: fixed;
+			  z-index: 1;
+			  top: 20px;
+			  left: 10px;
+			  background: #eee;
+			  overflow-x: hidden;
+			  padding: 8px 0;
+			}
+
+			.sidenav a {
+			  padding: 6px 8px 6px 16px;
+			  text-decoration: none;
+			  font-size: 25px;
+			  color: #2196F3;
+			  display: block;
+			}
+
+			.sidenav a:hover {
+			  color: #064579;
+			}
+		@media screen and (max-height: 450px) {
+			  .sidenav {padding-top: 15px;}
+			  .sidenav a {font-size: 18px;}
+			}
 		</style>    
     </head>
 	
@@ -30,17 +56,20 @@
 	<header style="line-height:100%">
 	<h1>Discussing Election Data in Virginia Through Data Visualizations</h1>
 	<h5>By Sarah Larimer and Renee Ritchey</h4>
-	<p> This webpage is produced for the Data Visualization Interacting with Data Assignment. It evaluates a variety of voting data for the state of Virginia and presents it through different visualizations.<a href="https://github.com/fivethirtyeight/data/tree/master/non-voters">Data</a> for the first chart comes from a sample of 5,239 verified respondents surveyed as part of a poll for FiveThirtyEight. Data for the second and third charts comes from data provided by the state of Virginia (<a href="https://apps.elections.virginia.gov/SBE_CSV/ELECTIONS/ELECTIONTURNOUT/">Link</a>)and the Demographics Research Group at the University of Virginia (<a href="https://demographics.coopercenter.org">Link</a>). 
+	<p> This webpage is produced for the Data Visualization Interacting with Data Assignment. It evaluates a variety of voting data for the state of Virginia and presents it through different visualizations.<a href="https://github.com/fivethirtyeight/data/tree/master/non-voters">Data</a> for the first chart comes from a sample of 5,239 verified respondents surveyed as part of a poll for FiveThirtyEight. Data for the second and third charts comes from data provided by the state of Virginia (<a href="https://apps.elections.virginia.gov/SBE_CSV/ELECTIONS/ELECTIONTURNOUT/">Link</a>) and the Demographics Research Group at the University of Virginia (<a href="https://demographics.coopercenter.org">Link</a>). 
 	</header>
         
+	<div class="sidenav">    
 	<p>Contents</p>    
 	<nav>
 	    <ul>
 	      <li><a href="#ParCat">Voter Patterns (Parallel Categories Plot)</a></li>
 	      <li><a href="#Bubble">Turnout Over Time (Bubble Plot)</a></li>
 	      <li><a href="#Choro">Turnout by Locality (Choropleth)</a></li>
+	      <li><a href="#Changes">Layout Changes</a></li>
 	    </ul>
-	  </nav>    
+	  </nav> 
+        </div> 
 	    
 	<a id="ParCat">    
     	<h2>Voter Patterns (Parallel Categories Plot)</h2>
@@ -62,6 +91,11 @@
     	frameBorder="0"></iframe> 
 	<p>The northeast part of Virginia has a higher voter turnoutout on average than the southwest areas. This is with the notable exception of a few localities on the coast that have lower voter turnout than their surrounding areas. Furthermore, groups of higher voter turnout and lower voter turnout are clustered together. These trends are what we would expect given what we know about Virginia. Voter turnout is higher in more urban areas and lower in more rural areas. What is surprising is that in relatively smei-urban areas on the coast like Norfolk, Hampton, and Newport News have lower turnout than expected. Similarily, localities in the northern part of the state around DC have lower turnout than we would expect. </p>
 	</a>
+	    
+	<a id="Changes">         
+     	<h2>Layout Changes</h2>
+	<p> </p>
+        </a>
 	    
 	    
     </body>
