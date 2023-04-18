@@ -32,27 +32,26 @@
 			.link:hover {
 			  	color: #f1f1f1;
 			}
-			.sidepanel {
-				  height: 100%; /* Specify a height */
-				  width: 0; /* 0 width - change this with JavaScript */
-				  position: fixed; /* Stay in place */
-				  z-index: 1; /* Stay on top */
+			.sidebar {
+				  height: 100%;
+				  width: 0;
+				  position: fixed;
+				  z-index: 1;
 				  top: 0;
 				  left: 0;
-				  background-color: #111; /* Black*/
-				  overflow-x: hidden; /* Disable horizontal scroll */
-				  padding-top: 60px; /* Place content 60px from the top */
-				  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+				  background-color: #111;
+				  overflow-x: hidden;
+				  transition: 0.5s;
+				  padding-top: 60px;
 				}
 	
-			.sidepanel .closebtn {
+			.sidebar .closebtn {
 				  position: absolute;
 				  top: 0;
 				  right: 25px;
 				  font-size: 36px;
 				  margin-left: 50px;
 				}
-
 
 			.openbtn {
 				  font-size: 20px;
@@ -61,6 +60,10 @@
 				  color: white;
 				  padding: 10px 15px;
 				  border: none;
+				}
+
+			.openbtn:hover {
+				  background-color: #444;
 				}
 				</style>
     </head>
