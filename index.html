@@ -17,26 +17,63 @@
 			}
 		
 			header {
-			  background-color: #666;
-			  padding: 10px;
-			  text-align: center;
-			  font-size: 20px;
-			  color: white;
-			}
+				  background-color: #666;
+				  padding: 10px;
+				  text-align: center;
+				  font-size: 20px;
+				  color: white;
+				}
 			footer {
-			  background-color: #666;
-			  padding: 10px;
-			  text-align: center;
-			  font-size: 15px;
-			  color: white;
-			}
+				  background-color: #666;
+				  padding: 10px;
+				  text-align: center;
+				  font-size: 15px;
+				  color: white;
+				}
 			.link:hover {
-			  color: #f1f1f1;
+			  	color: #f1f1f1;
 			}
-		</style>
+			.sidepanel {
+				  height: 100%; /* Specify a height */
+				  width: 0; /* 0 width - change this with JavaScript */
+				  position: fixed; /* Stay in place */
+				  z-index: 1; /* Stay on top */
+				  top: 0;
+				  left: 0;
+				  background-color: #111; /* Black*/
+				  overflow-x: hidden; /* Disable horizontal scroll */
+				  padding-top: 60px; /* Place content 60px from the top */
+				  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+				}
+	
+			.sidepanel .closebtn {
+				  position: absolute;
+				  top: 0;
+				  right: 25px;
+				  font-size: 36px;
+				  margin-left: 50px;
+				}
+
+
+			.openbtn {
+				  font-size: 20px;
+				  cursor: pointer;
+				  background-color: #111;
+				  color: white;
+				  padding: 10px 15px;
+				  border: none;
+				}
+				</style>
     </head>
 	
     <body>
+	<div id="mySidebar" class="sidebar">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		<p>This is the sidebar</p>
+	</div>
+
+
+  	<button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
 	  
 	<a id="Top">
 	<header>
@@ -86,6 +123,17 @@
 	<footer>
 	<p> <a class="link" href="#Top">Top</a></p>
 	</footer>
+	
+	<script>
+	function openNav() {
+	  document.getElementById("mySidebar").style.width = "250px";
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidebar").style.width = "0";
+	}
+	</script>
+   
 	  	    
     </body>
 </html>
